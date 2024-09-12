@@ -1,5 +1,7 @@
 import express from "express";
 
+const age = 26
+
 import {
   deleteAstronautById,
   updateAstronautById,

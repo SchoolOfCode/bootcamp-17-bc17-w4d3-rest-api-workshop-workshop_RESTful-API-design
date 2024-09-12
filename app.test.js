@@ -102,7 +102,7 @@ describe(LEVELS.two, () => {
   it("app should have a DELETE request handler that deletes an astronaut by id", async () => {
     const astronaut = await createAstronaut(astronautToDelete);
     const res = await request(app).delete(
-      `/astronauts/${astronautToDelete.id}`
+      `/astronauts/${astronautToDelete.id}`,
     );
     const expected = { success: true, payload: astronaut };
     const actual = res.body;

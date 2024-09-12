@@ -59,6 +59,6 @@ export async function getAstronautsByName(search) {
   return astronauts.filter(
     ({ firstName, lastName }) =>
       firstName.toLowerCase().includes(search.toLowerCase()) ||
-      lastName.toLowerCase().includes(search.toLowerCase())
+      lastName.toLowerCase().includes(search.toLowerCase()),
   );
 }
