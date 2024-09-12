@@ -20,7 +20,7 @@ export async function getAstronautById(requestId) {
 }
 
 export async function replaceAstronautById(requestId, astronautReplacement) {
-       const index = astronauts.findIndex(({ id }) => id === requestId);
+  const index = astronauts.findIndex(({ id }) => id === requestId);
   console.log("I", index, requestId);
   if (index === -1) {
     throw new Error(`No astronaut with ID ${requestId} found.`);
